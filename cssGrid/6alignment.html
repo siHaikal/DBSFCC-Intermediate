@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-inline: auto;
+
+  width: 400px;
+  height: 200px;
+
+  background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto;
+}
+
+/* .container.justify-items {
+  justify-items: start;
+  justify-items: end;
+  justify-items: center;
+  justify-items: stretch;
+} */
+
+/* .container.justify-content {
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: stretch;
+} */
+
+/* .container.align-items {
+  align-items: start;
+  align-items: end;
+  align-items: center;
+  align-items: stretch;
+} */
+
+/* .container.align-content {
+  align-content: start;
+  align-content: end;
+  align-content: center;
+  align-content: space-around;
+  align-content: space-evenly;
+  align-content: space-between;
+  align-content: stretch;
+} */
+
+/* /////////////////////////////////////////////////////////// */
+
+/* .box.box3.justify-self {
+  justify-self: start;
+  justify-self: end;
+  justify-self: center;
+  justify-self: stretch;
+} */
+
+/* .box.box3.align-self {
+  align-self: start;
+  align-self: end;
+  align-self: center;
+  align-self: stretch;
+} */
+
+
+
+
+
+
+.box {
+  /* width: 50px; */
+  height: 50px;
+
+  background: rgba(255, 213, 70, 0.4);
+  border: 2px dashed rgba(236, 198, 48, 0.5);
+
+  text-align: center;
+  line-height: 50px;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+<!-- Grid Container -->
+    <!-- justify-items -->
+        <!-- Menjajarkan secara horizontal. nilai yang didukung adalah start, end, center, dan stretch -->
+    <!-- justify-content -->
+        <!-- mengatur tata letak grid item di dalam grid cell. justify-content akan mengatur penataan grid track secara horizontal juga -->
+    <!-- align-items -->
+        <!-- dapat kita atur penjajarannya secara vertikal -->
+    <!-- align-content -->
+        <!-- Tidak jauh berbeda dengan justify-content, align-content akan mengatur penataan secara vertikal jika grid container memiliki free space dalam sumbu block (atas atau bawah). -->
+
+<!-- Grid Items -->
+    <!-- justify-self -->
+        <!-- agar dapat mengatur penataan grid items secara spesifik. -->
+    <!-- align-self -->
+        <!-- dapat mengatur penataan grid items secara spesifik dalam sumbu block. -->
+
+
+<!-- 
+    Properti dengan prefiks “justify” akan mengatur penataan secara posisi horizontal atau sumbu X.Properti dengan prefiks “align” akan mengatur penataan secara posisi vertikal atau sumbu Y. 
+-->
+    
+
+        <main>
+            <div class="container justify-items">
+              <div class="box">1</div>
+              <div class="box">2</div>
+              <div class="box">3</div>
+              <div class="box">4</div>
+              <div class="box">5</div>
+              <div class="box">6</div>
+            </div>
+          </main>
+
+</body>
+</html>

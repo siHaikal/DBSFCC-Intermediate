@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 5fr 2fr;
+
+/* mendefinisikan posisi yang akan ditempati oleh grid items. */
+    grid-template-areas: 
+    'header  header  header  header'
+    'content content content sidebar'
+    'footer  footer  footer  footer';
+
+    /* grid-template-areas: MENGOSONGKAN AREA DENGA TITIK
+    'header  header  header  header'
+    'content content content sidebar'
+    'footer  footer  footer  .......'; */
+}
+
+/* susunannya menjadi responsif */
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr 2fr;
+    grid-template-areas:
+      'header'
+      'content'
+      'sidebar'
+      'footer';
+  }
+}
+ 
+header {
+/* menamai grid items */
+  grid-area: header;
+
+
+}
+ 
+main {
+/* menamai grid items */
+  grid-area: content;
+}
+ 
+aside {
+/* menamai grid items */
+  grid-area: sidebar;
+}
+ 
+footer {
+/* menamai grid items */
+  grid-area: footer;
+}
+
+</style>
+
+</head>
+<body>
+    
+    <div class="grid">
+        <header>
+          <p>Header Content</p>
+        </header>
+       
+        <main>
+          <p>Main Content</p>
+        </main>
+       
+       
+        <aside>
+          <p>Side Content</p>
+        </aside>
+       
+       
+        <footer>
+          <p>Footer Content</p>
+        </footer>
+      </div>
+
+</body>
+</html>
